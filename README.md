@@ -195,7 +195,7 @@ started, add this configuration to your `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/stefmdavis/pipenv-setup
-  rev: "4.0.0a1" # pick a git hash / tag to point to
+  rev: v1.0.0 # pick a git hash / tag to point to
   hooks:
     - id: pipenv-setup
 ```

@@ -1,0 +1,20 @@
+# See https://pre-commit.com/ for usage and config
+repos:
+- repo: local
+  hooks:
+  - id: pipenv-setup-sync
+    name: "pipenv-setup sync with pipfile"
+    stages: [pre-push]
+    language: system
+    # --dev added to sync dev packages in pipfile with extras_require in setup.py
+    entry: python -m pipenv_setup sync --pipfile --dev
+    pass_filenames: false
+    always_run: true
+
+  - id: pipenv-setup-check
+    name: "pipenv-setup check"
+    stages: [pre-push]
+    language: system
+    entry: python -m pipenv_setup check
+    pass_filenames: false
+    always_run: true
