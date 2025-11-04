@@ -1,0 +1,13 @@
+- id: pipenv-setup-sync
+  name: pipenv-setup-sync
+  description: "Sync setup.py from pipenv environment"
+  entry: pipenv-setup sync
+  language: python
+  pass_filenames: false
+
+- id: pipenv-setup-check
+  name: pipenv-setup-check
+  description: "Check setup.py is in sync with Pipfile"
+  entry: pipenv-setup check
+  language: python
+  pass_filenames: false

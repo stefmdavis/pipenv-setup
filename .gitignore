@@ -1,0 +1,22 @@
+build
+dist
+*.egg-info/
+.tox/
+.coverage
+coverage.xml
+
+# caches
+.mypy_cache/
+.pytest_cache
+__pycache__/
+
+# virtual environments
+.env
+.venv/
+
+# editor files
+*.code-workspace
+*~
+
+# Pycharm
+.idea
