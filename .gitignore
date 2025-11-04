@@ -5,6 +5,10 @@ dist
 .coverage
 coverage.xml
 
+# Mac OSX ignores
+# General
+.DS_Store
+
 # caches
 .mypy_cache/
 .pytest_cache
